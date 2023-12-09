@@ -1,0 +1,43 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.title {
+	color: transparent;
+	-webkit-background-clip: text;
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 450px;
+	font-style: normal;
+	font-weight: 900;
+	line-height: normal;
+    letter-spacing: 14.271px;
+	text-transform: uppercase;
+	background-image: url("../img/background_mars.jpg");
+	background-size: 100% 100%;
+	transform: scaleY(1.6);
+	padding-top: 25px;
+}
+
+.sub-title {
+	color: #F23207;
+	font-family: Montserrat;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: 0.9px;
+	text-transform: uppercase;
+	padding-left: 25px;
+}

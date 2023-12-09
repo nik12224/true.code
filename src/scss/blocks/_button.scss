@@ -1,0 +1,31 @@
+.button {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+.button__link {
+    background-color: #F2E1C2;
+    padding: 10px 15px;
+    color: #262526;
+
+    &:hover {
+        background-color: #F23207;
+        color: #F2E1C2;
+    }
+}
+
+.button__form {
+    background-color: #262526;
+    color: #F2E1C2;
+    padding: 10px 119px;
+
+    @media (max-width: 599px) {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+	}
+}

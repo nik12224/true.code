@@ -1,0 +1,28 @@
+const config = {
+	mode: 'production',
+	entry: {
+		index: './src/js/index.js'
+		// contacts: './src/js/contacts.js',
+		// about: './src/js/about.js',
+	},
+	output: {
+		filename: '[name].bundle.js',
+	},
+	module: {
+		rules: [
+			{
+				test: /\.css$/,
+				use: ['style-loader', 'css-loader'],
+			},
+			{
+				test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+				loader: 'file-loader',
+				options: {
+				  name: '[name].[ext]'
+				}
+			  },
+		],
+	},
+};
+
+module.exports = config;
