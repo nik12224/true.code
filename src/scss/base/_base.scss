@@ -14,6 +14,7 @@ input::-webkit-inner-spin-button {
 }
 
 .title {
+	position: relative;
 	color: transparent;
 	-webkit-background-clip: text;
 	text-align: center;
@@ -28,6 +29,9 @@ input::-webkit-inner-spin-button {
 	background-size: 100% 100%;
 	transform: scaleY(1.6);
 	padding-top: 25px;
+	animation-name: text-appearance-title;
+    animation-duration: 3s;
+    animation-fill-mode:forwards
 }
 
 .sub-title {
@@ -40,4 +44,28 @@ input::-webkit-inner-spin-button {
 	letter-spacing: 0.9px;
 	text-transform: uppercase;
 	padding-left: 25px;
+	animation-name: text-appearance;
+    animation-duration: 2s;
+    animation-fill-mode:forwards
+}
+
+@keyframes text-appearance {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
+@keyframes text-appearance-title {
+from {
+	opacity: 0;
+}
+50% {
+	opacity: 0;
+}
+to {
+	opacity: 1;
+}
 }
