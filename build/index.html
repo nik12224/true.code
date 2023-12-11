@@ -10,10 +10,10 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet">
 	</head>
-	<body>
+	<body class="scroll">
 		<section class="background-image">
 			<header class="header">
-    <div class="container">
+    <div class="container container__header">
         <div class="header__row">
             <div class="logo">
                 <svg width="90" height="44" viewBox="0 0 90 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,9 +43,9 @@
                     <li><a class="nav__link" href="#">Процесс</a></li>
                     <li><a class="nav__link" href="#">Билеты</a></li>
                     <li><a class="nav__link" href="#">Новости</a></li>
-                    <li><a class="nav__link" href="#">Контакты</a></li>
+                    <li><a  class="nav__link">Контакты</a></li>
                 </ul>
-                <button class="button button__link">
+                <button href="#popup" class="button button__link popup-link">
                     Купить билеты
                 </button>
             </nav>
@@ -73,7 +73,7 @@
 				<div class="background-image__smoke"></div>
 			
 		</section>
-		<section class="popup">
+		<section id="popup" class="popup">
     <div class="container">
         <h2 class="popup__title">Бронирование <br> билетов</h2>
         <form action="POST" method="get">
@@ -97,7 +97,7 @@
                 </div>
             </section>
         </form>
-        <span class="popup__close">
+        <span class="popup__close close-popup">
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 1.71429L1.71429 4.08718e-07L12 10.2857L10.2857 12L0 1.71429Z" fill="#D9D9D9"/>
                 <path d="M1.71429 12L0 10.2857L10.2857 0L12 1.71429L1.71429 12Z" fill="#D9D9D9"/>
